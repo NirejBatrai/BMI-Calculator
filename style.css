@@ -52,6 +52,7 @@ button {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: 20px;
+  width: 100%;
 }
 
 button:hover {
@@ -64,4 +65,18 @@ span {
 }
 #output {
   background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .container h1 {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+
+  button {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
 }
